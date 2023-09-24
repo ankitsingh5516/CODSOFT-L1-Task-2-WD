@@ -1,0 +1,95 @@
+body h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body h2 {
+    background-color: rgb(221, 218, 216);
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p,
+ul,
+li {
+    margin: 0;
+    padding: 5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 20px;
+}
+
+header {
+    background-color: rgb(231, 110, 110);
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#photo {
+    margin: 5px 5px;
+    border-image: 5px;
+    border-color: black;
+}
+
+header p {
+    font-size: 18px;
+    color: #070707;
+    padding: 5;
+}
+
+#downloadButton {
+    text-align: left;
+    padding: 10px 20px;
+    background-color: #0f7cef;
+    color: #fff;
+    border: red;
+    cursor: pointer;
+}
+
+#downloadButton:hover {
+    background-color: #e61515;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.contacts {
+    justify-content: left;
+    align-items: left;
+}
+
+.contacts a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contacts img {
+    width: 32px;
+    height: 32px;
+}
+
+footer {
+    margin-left: 40px;
+}

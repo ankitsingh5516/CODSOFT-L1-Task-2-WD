@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <title>Ankit Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <h1>RESUME</h1>
+    <header>
+        <div>
+            <div id="photo">
+
+                <img style="float:right" src="ankiktsingh.jpg" alt="my PHOTO" height="150px" width="auto">
+
+            </div>
+            <div>
+                <h3>ANKIT SINGH</h3>
+            </div>
+            <div>
+                <p><strong>Add:-</strong>
+                    <BR>
+                    <strong>||</strong> P 12, Khera Dharampura <strong>||</strong> Chaprola <strong>||</strong></p>
+                <p> <strong>||</strong> Near Harishchand Baag <strong>||</strong> Ghaziabad <strong>||</strong> 201009 <strong>||</strong></p>
+            </div>
+    </header>
+
+    <button id="downloadButton" style="float: right">Download as PDF</button><br><br>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const pdfUrl = "https://drive.google.com/file/d/1NPKUkJxCiBJc1ASE-ZD7k4e-1lO3gUYE/view?usp=drive_link";
+            const downloadButton = document.getElementById("downloadButton");
+            downloadButton.addEventListener("click", function() {
+                downloadPDF(pdfUrl);
+            });
+
+            function downloadPDF(url) {
+                const link = document.createElement("a");
+                link.href = url;
+                link.target = "_blank";
+                link.setAttribute("download", "Ankit-Resume.pdf");
+                link.style.display = "none";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        });
+    </script>
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <div class="contacts">
+            <ul>
+                <li>
+                    <a href="tel:+918447492085">
+                        <img src="contact.png" alt="Contact">
+                    </a><strong>Mob. No.:</strong> 8447492085
+                </li>
+                <li>
+                    <a href="mailto:ankitsingh5516@gmail.com" target="_blank">
+                        <img src="gmail.png" alt="Gmail">
+                    </a>
+                    <strong>Email ID:</strong> ANKITSINGH5516@GMAIL.COM
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ankitsingh5516" target="_blank">
+                        <img src="linkdin.png" alt="Linkdin"></a>
+                    <strong>LinkedIn:</strong> WWW.LINKEDIN.COM/IN/ANKITSINGH5516
+                </li>
+                <li>
+                    <a href="https://WWW.GITHUB.COM/ANKITSINGH5516" target="_blank">
+                        <img src="github.png" alt="GITHUB"></a>
+                    <strong>GitHub id:</strong> WWW.GITHUB.COM/ANKITSINGH5516
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="objective">
+        <h2>Objective</h2>
+        <ul>
+            <p>To utilize my technical skills & work in a professionally challenging environment where I want to see myself as indispensable & important part of the organization by knowledge & experience.</p>
+    </section>
+    </ul>
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor's Degree in Computer Science and Engineering from <strong>AKTU (2020-24) </strong></li>
+            <li>Intermediate from <strong>UP Board (2020)</strong></li>
+            <li>High School from <strong>UP Board (2018) </strong></li>
+        </ul>
+    </section>
+    <section class="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Fresher</li>
+        </ul>
+    </section>
+    <section class="skill">
+        <h2>Skills</h2>
+        <img style="float: right;" src="sql.png" alt="my PHOTO" height="100px" width="200px" id="photo">
+        <img style="float: right;" src="python.png" alt="my PHOTO" height="100px" width="200px" id="photo">
+        <img style="float: right;" src="skill.jfif" alt="my PHOTO" height="100px" width="200px" id="photo">
+        <ul>
+            <li>Web Desigining <strong> (HTML, CSS & JS) </strong></li>
+            <li>Python Programming</li>
+            <li>C programming</li>
+            <li>SQL</li>
+            <li>Computer Basic Course <strong>(6 MOnths)</strong> </li>
+        </ul>
+    </section>
+    </ul>
+    <section class="Projects">
+        <h2> Projects</h2>
+        <label>
+            
+            <img style="float: right;" src="PROJECT1.png" alt="my PHOTO" height="150px" width="280px" id="photo">
+            <img style="float: right;" src="PROJECT.png" alt="my PHOTO" height="150px" width="280px" id="photo">
+        </label><br><br><br>
+        <ul>
+
+            <Li> TIC-TAC-TOE GAME USING C PROGRAMMING </Li>
+
+            <li>CALCULATOR USING (HTML, CSS & JS) </li><br>
+            <br><br>
+    </section>
+    <section class="Persnal-details">
+        <h2>Personal Details</h2>
+        <ul>
+            <li><strong>DOB:- </strong> 29/09/2002</li>
+            <li><strong>Father's Name:- </strong>Puran Singh</li>
+            <li><strong>Mother's Name:- </strong>Sanju Devi</li>
+            <li><strong>Languages:- </strong>English & Hindi</li>
+            <li><strong>Nationality:- </strong>Indian</li>
+            <li><strong>Gender:- </strong>Male</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Declaration</h2>
+        <ul>
+            <p>I hereby declare that all the Information given above is actual and Correct to the Best of my Knowledge and belief.</p>
+        </ul>
+    </section>
+    <footer>
+        <p><strong>Date:</strong>...../...../........</p>
+        <p><strong>Place</strong>........................</p>
+        <p style="text-align: right;">.........................<br><strong>(ANKIT SINGH)</strong></p>
+    </footer>
+</body>
+
+</html>
